@@ -1,0 +1,578 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+/* banner-img */
+.corner-bn 
+{
+    width: 46px;
+    height: 352px;
+    position: fixed;
+    top:30%;
+    right: 0px;
+}
+.corner-bn img
+{
+    width: 100%;
+}
+/* end */
+
+/* new-img */
+.new-img 
+{
+    width: 40px;
+    height: 23px;
+    position: fixed;
+    top:80.1%;
+    right: 0px;
+}
+.new-img img 
+{
+    width: 100%;
+}
+/* end */
+
+/* ball-img */
+.ball-img 
+{
+    width: 50px;
+    height: 25px;
+    position: fixed;
+    top:83%;
+    right:0px;
+}
+.ball-img img 
+{
+    width: 100%;
+    border: none;
+}
+/* end */
+
+/* header */
+header 
+{
+    width: 100%;
+    box-shadow: 0px 0px 10px 2px #ccc;
+    display: flex;
+    flex-wrap: wrap;
+    position:sticky;
+    top: 1px;
+    background-color: white;
+}
+.headerLeft 
+{
+    flex-basis: 48%;
+    /* background-color: aquamarine; */
+    padding: 22px 0px;
+    padding-left:60px;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    position: relative;
+}
+.headerLeft .logo a img 
+{
+    width: 53px;
+    height: 36px;
+}
+.headerLeft nav
+{
+    position: relative;
+}
+.headerLeft nav>ul 
+{
+    display: flex;
+    gap:32.5px;
+}
+.headerLeft nav>ul>li>a
+{
+    color: black;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight:bold;
+    padding-bottom: 31px;
+    border-bottom:4px solid transparent;
+}
+.mega-menu 
+{
+    position: absolute;
+    left:0px;
+    top:280%;
+    box-shadow: 0px 0px 10px 2px #ccc;
+    width:70vw;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    transition: 0.5s;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+.mega-menu-list 
+{
+    flex-basis: 20%;
+    padding: 0px 10px;
+}
+.mega-menu-list-inner
+{
+    margin: 10px 0px;
+}
+.mega-menu-list-inner>h4 
+{
+    color: rgb(255, 111, 135);
+    padding-bottom: 10px;
+}
+.mega-menu-list-inner>h5 
+{
+    font-size:13px;
+    padding: 5px 0px;
+    transition: 0.5s;
+}
+.mega-menu-list-inner>h5>a
+{
+    transition: 0.5s;
+    color: black;
+    border: none !important;
+}
+.mega-menu-list-inner>h5:hover 
+{
+    background-color:blue;
+    padding-left: 20px;
+}
+.mega-menu-list-inner>h5:hover a
+{
+    color: white;
+}
+.headerLeft nav>ul>li:hover .mega-menu 
+{
+    transform: scaleY(1);
+}
+.headerLeft nav>ul>li:hover a 
+{
+    border-bottom: 4px solid red;
+}
+.headerLeft nav ul li a sup 
+{
+    color: red;
+    font-size: 10px;
+    padding-left:2px;
+}
+.headerRight 
+{
+    flex-basis: 52%;
+    /* background-color: antiquewhite; */
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.headerRight form 
+{
+    flex-basis: 66%;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-wrap: wrap;
+    border: 0.5px solid grey;
+    border-radius:5px;
+}
+.headerRight form button 
+{
+    flex-basis: 10%;
+    padding: 15px 0px;
+    background-color: #F5F5F6;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: grey;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.headerRight form input 
+{
+    flex-basis: 90%;
+    background-color: #F5F5F6;
+    border: none;
+    padding-left: 20px;
+    color: green;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.headerRight .profileIcon
+{
+    flex-basis: 34%;
+    /* background-color: palegreen; */
+    display: flex;
+    padding-left: 50px;
+    gap: 22px;
+}
+.headerRight .profileIcon .same a
+{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    align-items: center;
+    gap: 5px;
+    color: black;
+}
+.headerRight .profileIcon .same h6 
+{
+    font-size: 11px;
+    font-weight:bold;
+}
+/* end */
+
+/* flat discount-css */
+.flat-dis 
+{
+    width: 100%;
+    margin-top: 30px;
+}
+.dis-banner 
+{
+    max-width:1420px;
+    margin: auto;
+}
+.dis-banner img 
+{
+    width: 100%;
+}
+/* end */
+
+/* great festival-css */
+.great-banner 
+{
+    width: 100%;
+}
+.great-mid 
+{
+    max-width:1420px;
+    margin: auto;
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.great-mid .greatBannerLeft
+{
+    flex-grow: 1;
+}
+.great-mid .greatBannerLeft img 
+{
+    width: 100%;
+    cursor: pointer;
+}
+.great-mid .greatBannerRight
+{
+    flex-grow: 1;
+}
+.great-mid .greatBannerRight img 
+{
+    width: 100%;
+    cursor: pointer;
+}
+/* end */
+
+/* fashion-partner-css */
+.fashion-partner
+{
+    width: 100%;
+    margin-top:-4px;
+}
+.fashion-mid 
+{
+    max-width: 1420px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.fashion-mid .fashionLeft
+{
+    flex-grow: 1;
+}
+.fashion-mid .fashionLeft img
+{
+    width: 100%;
+    cursor: pointer;
+}
+.fashion-mid .fashionRight
+{
+    flex-grow: 1;
+}
+.fashion-mid .fashionRight img
+{
+    width:100%;
+    cursor: pointer;
+}
+/* end */
+
+/* paytm-offer-css */
+.paytm-offer
+{
+    width: 100%;
+}
+.paytm-offer-mid 
+{
+    max-width: 1420px;
+    margin: auto;
+}
+.paytm-offer-mid img 
+{
+    width: 100%;
+    cursor: pointer;
+}
+/* end */
+
+/* best-style-css */
+.best-style
+{
+    width: 100%;
+    margin: 15px 0px;
+}
+.best-style-mid 
+{
+    max-width: 1420px;
+    margin: auto;
+}
+.best-style-mid img 
+{
+    width: 100%;
+}
+/* end */
+
+/* best-style-slider-css */
+.best-style-slider 
+{
+    width: 100%;
+}
+.best-slider-mid 
+{
+    max-width: 1420px;
+    margin: auto;
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.best-slider-mid .same 
+{
+    flex-grow: 1;
+}
+.best-slider-mid .same img
+{
+    width:100%;
+    cursor: pointer;
+}
+/* end */
+
+/* crazy-deal */
+.crazy-deal 
+{
+    width: 100%;
+    margin: 15px 0px;
+}
+.crazy-deal-mid 
+{
+    max-width: 1420px;
+    margin: auto;
+}
+.crazy-deal-mid img 
+{
+    width: 100%;
+}
+/* end */
+
+/* crazy-deal-list-css */
+.crazy-deal-list 
+{
+    width: 100%;
+}
+.crazy-deal-list-mid 
+{
+    max-width: 1420px;
+    margin: auto;
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.crazy-deal-list-mid .same2
+{
+    flex-grow: 1;
+}
+.crazy-deal-list-mid .same2 img 
+{
+    width: 100%;
+    cursor: pointer;
+}
+/* end */
+
+/* category-banner */
+.category-banner 
+{
+    width: 100%;
+    margin: 15px 0px;
+}
+.category-banner-mid 
+{
+    max-width: 1420px;
+    margin: auto;
+}
+.category-banner-mid img 
+{
+    width:100%;
+}
+/* end */
+
+/* category */
+.category 
+{
+    width: 100%;
+    margin: 15px 0px;
+}
+.category-mid
+{
+    max-width: 1420px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.category-list 
+{
+    flex-basis:16.6667%;
+}
+.category-list img 
+{
+    width: 100%;
+    cursor: pointer;
+}
+/* end */
+
+/* footer-banner */
+.footer-banner 
+{
+    width: 100%;
+}
+.footer-banner-mid 
+{
+    max-width: 1420px;
+    margin: auto;
+}
+.footer-banner-mid img
+{
+    width:100%;
+    cursor: pointer;
+}
+/* end */
+
+/* footer */
+.footer 
+{
+    width: 100%;
+    background-color: #FAFBFC;
+    margin-top: 50px;
+}
+.footer-mid 
+{
+    max-width: 1120px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+.footer-list-1 
+{
+    flex-basis:13%;
+    margin-left:2.5%;
+    margin-right: 2.5%;
+}
+.footer-list-2 
+{
+    flex-basis: 13%;
+    margin-left:2.5%;
+    margin-right: 2.5%;
+}
+.footer-list-3 
+{
+    flex-basis: 27%;
+    margin-left:2.5%;
+    margin-right: 2.5%;
+}
+.footer-list-3 .keep 
+{
+    padding-top: 20px;
+    padding-bottom:15px;
+}
+.footer-list-3 .app-store
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.footer-list-3 .social-icons 
+{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+.footer-list-3 .social-icons img 
+{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+.footer-list-3 .app-store .and 
+{
+    flex-basis: 50%;
+}
+.footer-list-3 .app-store .and img 
+{
+    width: 100%;
+    padding:5px;
+    cursor: pointer;
+}
+.footer-list-3 .app-store .iphone 
+{
+    flex-basis: 50%;
+}
+.footer-list-3 .app-store .iphone img 
+{
+    width: 100%;
+    padding:5px;
+    cursor: pointer;
+}
+.footer-list-4 
+{
+    flex-basis: 27%;
+    margin-left:2.5%;
+    margin-right:2.5%;
+    margin-top: -20px;
+}
+.footer-list-4 .original
+{
+    width: 100%;
+}
+.footer-list-4 .original img 
+{
+    width: 100%;
+}
+.footer-list-5 
+{
+    flex-basis: 12%;
+    margin-left:2.5%;
+    margin-right: 2.5%;
+}
+.footerSame h5 
+{
+    text-transform:uppercase;
+    padding-bottom:30px;
+}
+.footerSame h6
+{
+    color:grey;
+    padding: 8px 0px;
+    font-size:13px;
+    font-weight:500;
+    cursor: pointer;
+}
+/* end */
